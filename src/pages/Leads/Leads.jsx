@@ -1,13 +1,25 @@
-import React from "react";
+import React, { useState } from "react";
 import { HiArrowLeft, HiArrowRight, HiArrowsUpDown } from "react-icons/hi2";
 import { RiDeleteBinLine } from "react-icons/ri";
+import AddLeads from "./AddLeads";
+import LeadsDetails from "./LeadsDetails";
+import { useNavigate } from "react-router-dom";
 
 const Leads = () => {
+  const [popup,setPopup]=useState(false) 
+  const handleOpenModal=()=>{
+    setPopup(true)
+  }
+const navigate = useNavigate();
+
+const handleDetails =()=>{
+navigate("/LeadDetails");
+}
   return (
-    <div>
+    <>
       <div className="flex  my-4 justify-between">
         <h1 className="font-Exo text-xl font-bold py-2 px-1 text-slate-950">Leads</h1>
-        <button className="bg-orange text-white rounded-md py-2 px-10  font-Source_Sans_Pro">
+        <button onClick={handleOpenModal} className="bg-orange text-white rounded-md py-2 px-10  font-Source_Sans_Pro">
           Add Leads
         </button>
       </div>
@@ -55,16 +67,21 @@ const Leads = () => {
             </th>
           </tr>
         </thead>
-        <tbody className="text-[#7D7D7D] bg-[#FFFFFF] ">
-          <tr className="border-b-2 ">
-            <td className="px-8 py-2">1</td>
-            <td>18 June 24, 02.23 PM</td>
-            <td>Name</td>
-            <td>18 June 24, 02.23 PM</td>
-            <td>18 June 24, 02.23 PM</td>
+        <tbody  className=" text-[#7D7D7D] bg-white ">
+          <tr className="border-b-2  ">
+            <td  className="px-8 py-2 ">
+              <p onClick={handleDetails} className="cursor-pointer">1</p></td>
             <td>
-              <p className="text-[#4F45B6] bg-slate-100 w-20 py-1 rounded-md text-center ">
-                Status
+              <p onClick={handleDetails} className="cursor-pointer">18 June 24, 02.23 PM</p></td>
+            <td>
+              <p onClick={handleDetails} className="cursor-pointer">Name</p></td>
+            <td >
+              <p  onClick={handleDetails} className="cursor-pointer">18 June 24, 02.23 PM</p></td>
+            <td >
+              <p onClick={handleDetails}className="cursor-pointer" >18 June 24, 02.23 PM</p></td>
+            <td>
+              <p className="text-green-600 bg-[#CBFFD8] w-20 py-1 rounded-md text-center ">
+               Active
               </p>
             </td>
             <td className="  inline-block text-red-500 p-2 my-4 ml-4 bg-pink-200">
@@ -78,8 +95,8 @@ const Leads = () => {
             <td>18 June 24, 02.23 PM</td>
             <td>18 June 24, 02.23 PM</td>
             <td>
-              <p className="text-center w-20 py-1 text-[#4F45B6] bg-slate-100 rounded-lg">
-                Status
+              <p className="text-center w-20 py-1 text-red-500 bg-[#F8D7DA] rounded-lg">
+                In Active
               </p>
             </td>
             <td className="  inline-block p-2 my-4 ml-4 bg-pink-200 text-red-500">
@@ -106,7 +123,9 @@ const Leads = () => {
           </p>
         </div>
       </div>
-    </div>
+      {popup &&<AddLeads/>}
+    </>
+    
   );
 };
 
