@@ -20,23 +20,23 @@ const LeadsDetails = () => {
         <h1 className="font-Exo text-[#2C3E50] font-semibold text-xl px-1 py-2">
           Lead Details
         </h1>
-        <button onClick={handleFollowup} className="font-Source_Sans_Pro font-normal text-xs bg-orange rounded-md text-white px-12 py-2">
+        <button onClick={handleFollowup} className="font-Source_Sans_Pro font-normal text-xs bg-orange rounded-md text-white px-12 py-2 ">
           Add FollowUp
         </button>
       </div>
-      <div className="grid grid-cols-2 gap-6 sm:grid-cols-1 lg:grid-cols-2 2xl:grid-cols-2 my-5">
-        <div className=" bg-[#7ABDFF33] rounded-xl shadow-lg  ">
+      <div className="grid  gap-6  lg:grid-cols-2 md:grid-cols-1 grid-cols-1 my-4 ">
+        <div className=" bg-[#7ABDFF33] rounded-xl drop-shadow-lg  ">
           <div className=" flex justify-between h-36  " >
             <p className="text-[#2337C6] px-5 py-5 font-semibold text-lg font-Source_Sans_Pro">
               Welcome Back!!!
             </p>
           </div>
-          <div className=" bg-white flex justify-between items-center rounded-b-lg shadow-lg  ">
+          <div className=" bg-white flex justify-between items-center rounded-b-lg   ">
           <div className="mx-6">
-              <span className="  grid -mt-10  text-white font-semibold text-4xl bg-[#2337C6] rounded-full w-20 h-20 items-center justify-center ">
+              <span className="drop-shadow-md shadow-lg grid -mt-10  text-white font-semibold text-4xl bg-[#2337C6] rounded-full  w-20 h-20 items-center justify-center ">
                K
               </span>
-              <p className=" my-3  text-[#7D7D7D] font-semibold text-base">
+              <p className=" my-3  text-grey font-semibold text-base">
                 Profile name
               </p>
               <p className="my-3  text-[#D1D1D1] text-base font-normal">
@@ -51,7 +51,7 @@ const LeadsDetails = () => {
             </div>
           </div>
         </div>
-        <div className="text-[#2C3E50] font-Source_Sans_Pro flex  flex-col gap-5 bg-white py-5  px-5 rounded-xl shadow-lg   ">
+        <div className="text-[#2C3E50] font-Source_Sans_Pro flex  flex-col gap-5 bg-white py-5  px-5 rounded-xl  drop-shadow-lg   ">
           <h1 className="font-semibold text-base">Lead Follow Ups</h1>
           <p className="font-normal text-sm">
             {" "}
@@ -63,37 +63,37 @@ const LeadsDetails = () => {
             Ravikumar | 27/09/2024 | 10:00am
           </p>
         </div>
-        <div className=" grid font-Source_Sans_Pro text-sm font-semibold text-[#2C3E50]w-[538px] h-[359px] bg-white rounded-xl shadow-lg px-8 py-8 gap-2 ">
+        <div className=" grid font-Source_Sans_Pro text-sm font-semibold text-[#2C3E50]w-[538px] h-[359px] bg-white rounded-xl drop-shadow-lg px-8 py-8 gap-2 ">
           <h1 className="mb-3 text-base text-[#2C3E50]">Basic Information</h1>
           <h1 className=" grid  grid-cols-2 items-center">
             Complaint Raised from:
-            <span className="  text-[#7D7D7D] font-normal">Call</span>
+            <span className=" text-grey font-normal">Call</span>
           </h1>
           <h1 className=" grid grid-cols-2 items-center">
             Created At:
-            <span className=" text-[#7D7D7D] font-normal"> 27/09/2024 10:00 am</span>
+            <span className=" text-grey font-normal"> 27/09/2024 10:00 am</span>
           </h1>
           <h1 className=" grid grid-cols-2 items-center">
             Email:
-            <span className=" text-[#7D7D7D] font-normal"> ravikumar@gmail.com </span>
+            <span className=" text-grey font-normal"> ravikumar@gmail.com </span>
           </h1>
           <h1 className="grid grid-cols-2 items-center">
-            Address :<span className=" text-[#7D7D7D] font-normal"> Chennai </span>
+            Address :<span className=" text-grey font-normal"> Chennai </span>
           </h1>
           <h1 className=" grid grid-cols-2 items-center">
-            City :<span className=" text-[#7D7D7D] font-normal"> Chennai </span>
+            City :<span className=" text-grey font-normal"> Chennai </span>
           </h1>
           <h1 className="grid grid-cols-2 items-center">
-            State :<span className=" text-[#7D7D7D] font-normal">Tamilnadu</span>
+            State :<span className=" text-grey font-normal">Tamilnadu</span>
           </h1>
           <h1 className="grid grid-cols-2 items-center">
-            Note :<span className=" text-[#7D7D7D] font-normal"> Test </span>
+            Note :<span className=" text-grey font-normal"> Test </span>
           </h1>
         </div>
       </div>
     </div>
-    { add && <AddFollowUp/>}
-    { edit && <EditLeads/>}
+    { add && <AddFollowUp onClose={()=>setAdd(false)}/>}
+    { edit && <EditLeads onClose={()=>setEdit(false)}/>}
     </>
   );
 };

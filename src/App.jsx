@@ -7,6 +7,8 @@ import Leads from "./pages/Leads/Leads";
 import LeadsDetails from "./pages/Leads/LeadsDetails";
 import AddFollowUp from "./pages/Leads/AddFollowUp";
 import AddLeads from "./pages/Leads/AddLeads";
+import User from "./pages/Users/User";
+import UsersView from "./pages/Users/UsersView";
 
 function App() {
   return (
@@ -18,6 +20,8 @@ function App() {
             <Route path="/insitution" element={<Insitution/>}/>
             <Route path="/leads" element={<Leads/>}/>
             <Route path="/LeadDetails" element={<LeadsDetails/>}/>
+            <Route path="/users" element={<User/>}/>
+            <Route path="/UsersView" element={<UsersView/>}/>
           </Route>
         </Routes>
       </BrowserRouter>

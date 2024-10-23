@@ -15,7 +15,8 @@ export default {
         'background':'#f5f7fb',
         'select-sidebar':'#f0f8ff',
         'select-title':' #3B5998',
-        'orange':'#FD7D00'
+        'orange':'#FD7D00',
+        'grey':'#7D7D7D'
       }
     },
   },

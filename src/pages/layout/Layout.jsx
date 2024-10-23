@@ -28,7 +28,7 @@ const Layout = () => {
     { title: "Enquires", icon: <TbUserQuestion />, to: "#" },
     { title: "Tickets", icon: <TbTicket />, to: "#" },
     { title: "Packages", icon: <PiPackageDuotone />, to: "#" },
-    { title: "Users", icon: <FiUserPlus />, to: "#" },
+    { title: "Users", icon: <FiUserPlus />, to: "/users" },
     { title: "Interview", icon: <TbMessagePlus />, to: "#" },
     { title: "Subscription", icon: <RiVipDiamondLine />, to: "#" },
     { title: "Settings", icon: <TbSettings />, to: "#" },
