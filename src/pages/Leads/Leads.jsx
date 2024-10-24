@@ -98,8 +98,8 @@ const handleDetails =()=>{
                <p className="  w-20 py-1 text-red-500 bg-[#F8D7DA] rounded-lg ">In Active</p> 
              
             </td >
-            <td className="inline-block ml-4 p-2 my-4 bg-pink-200 text-red-500">
-              <RiDeleteBinLine className="" />
+            <td className="inline-block ml-4 p-2 my-4 bg-pink-200 text-red-500 rounded-sm">
+              <RiDeleteBinLine  />
             </td>
           </tr>
         </tbody>
