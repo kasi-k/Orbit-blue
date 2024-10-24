@@ -3,10 +3,6 @@ import { IoClose } from "react-icons/io5";
 import Leads from './Leads';
 
 const AddLeads = ({onClose}) => {
-    const[cancel,setCancel]=useState(false)
-    const handleLeads=()=>{
-        setCancel(true)
-    }
   return (
     <>
     <div className=" font-Source_Sans_Pro fixed inset-0 flex justify-center  items-center bg-opacity-25 backdrop-blur-sm">

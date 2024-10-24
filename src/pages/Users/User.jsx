@@ -5,7 +5,12 @@ import { RiDeleteBinLine } from "react-icons/ri";
 import { FiEye } from "react-icons/fi";
 import {  Navigate, useNavigate } from "react-router-dom";
 import UsersView from "./UsersView";
+import AddUser from "./AddUser";
 const User = () => {
+  const[add,setAdd]=useState(false)
+    const handleUser=()=>{
+       setAdd(true)
+    }
   const Navigate = useNavigate();
 
   const handleView=()=>{
@@ -15,7 +20,7 @@ const User = () => {
     <>
     <div className="flex  my-4 justify-between">
       <h1 className="font-Exo text-xl font-bold py-2 px-1 text-slate-950">Users</h1>
-      <button className="bg-orange text-white rounded-md py-2 px-10  font-Source_Sans_Pro">
+      <button onClick={handleUser} className="bg-orange text-white rounded-md py-2 px-10  font-Source_Sans_Pro">
         Add User
       </button>
     </div>
@@ -160,6 +165,7 @@ const User = () => {
         </p>
       </div>
     </div>
+    {add && <AddUser onClose={()=>setAdd(false)}/>}
     </>
   )
 }
