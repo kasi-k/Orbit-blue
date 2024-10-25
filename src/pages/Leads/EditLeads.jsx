@@ -16,7 +16,7 @@ const EditLeads = ({onClose}) => {
                 Complaint Raised from
             </label>
               <select defaultValue='from' className=" border border-[#D0D5DD] text-grey rounded-md w-[273px] h-11 px-2 col-span-8 ">
-                <option value='from'>From</option>
+                <option value='from'disabled>From</option>
                 <option value='call'>Call</option>
                 <option value='email'>Email</option>
                 <option value='sms'>SMS</option>
@@ -67,7 +67,7 @@ const EditLeads = ({onClose}) => {
               />
             
 
-            <div className=" flex col-span-12 justify-center gap-5 my-5  py-2">
+            <div className=" flex col-span-12 justify-center gap-3 my-5 ">
               <button className="text-red-600 border-red-600 border px-8 py-2 rounded">
                 Cancel
               </button>

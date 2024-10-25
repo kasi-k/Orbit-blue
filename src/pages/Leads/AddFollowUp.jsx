@@ -15,7 +15,7 @@ const AddFollowUp = ({onClose}) => {
             <input type='date' className='col-span-6  border border-[#D0D5DD] rounded-lg py-2 px-2 text-[#D0D5DD]'/> 
             <label className="  font-normal text-base text-black">Note</label>
             <textarea  rows={4} className=' col-span-6 border border-[#D0D5DD] rounded-lg px-2 py-2 h-28 text-xs font-normal text-[#D0D5DD]'placeholder='Follow up note'/>
-            <div className=' col-span-6 flex justify-center gap-5  lg:py-20 md:py-20 py-0'>
+            <div className=' col-span-6 flex justify-center gap-3  lg:py-20 md:py-20 py-0'>
             <button className='text-red-600 border-red-600 border px-8 py-2 rounded'>Cancel</button>
             <button className='bg-orange px-10 py-2 rounded text-white'>Save</button>
             </div>

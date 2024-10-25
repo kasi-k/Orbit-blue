@@ -16,7 +16,8 @@ export default {
         'select-sidebar':'#f0f8ff',
         'select-title':' #3B5998',
         'orange':'#FD7D00',
-        'grey':'#7D7D7D'
+        'grey':'#7D7D7D',
+        'border-grey':'#D0D5DD'
       }
     },
   },
