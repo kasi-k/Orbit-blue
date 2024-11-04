@@ -9,7 +9,7 @@ const EditLeads = ({onClose}) => {
           <button onClick={onClose} className=" place-self-end bg-white rounded-full lg:-mx-4 lg:-my-5 md:-my-5 md:-mx-4 my-1 mx-1 lg:shadow-md md:shadow-md shadow-none lg:py-3 md:py-3 py-0 lg:px-3 md:px-3 px-0">
             <IoClose className="size-[24px]" />
           </button>
-          <h1 className="grid justify-center py-4 text-[#383E49] font-bold text-xl">
+          <h1 className="text-center py-4 text-[#383E49] font-bold text-xl">
               Edit Leads </h1>
           <form className="grid  mx-4 my-2 items-center gap-4 ">
               <label className=" text-[#48505E] text-base font-normal col-span-4 ">

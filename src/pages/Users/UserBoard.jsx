@@ -87,14 +87,23 @@ const UserBoard = () => {
     </div>
     <div className=' col-span-8 '>
     <div className='bg-white '>
-      <p>Description</p>
+      <p className=''>Description</p>
+       
     </div>
     </div>
-    <div className='grid grid-cols-2 col-span-8 row-span-11 gap-3'>
-    <div className='bg-white '>4</div>
-    <div className='bg-white '>5</div>
-    <div className='bg-white '>6</div>
-    <div className='bg-white '>7</div>
+    <div className='grid grid-cols-2 col-span-8 row-span-11  gap-3'>
+    <div className='bg-white '>
+      <p className=''>Stronger Areas</p>
+    </div>
+    <div className='bg-white '>
+      <p className=''>Areas Need To improve</p>
+    </div>
+    <div className='bg-white '>
+      <p className=''>Emotional status</p>
+    </div>
+    <div className='bg-white '>
+     <p className=''> last month interview reports </p>
+    </div>
     </div>
   </div>
 </div>
