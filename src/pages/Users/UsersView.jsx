@@ -13,10 +13,9 @@ const UsersView = () => {
   return (
     <>
     <div className='font-exo font-bold text-2xl text-[#2C3E50]'>
-       <p>{activeTab==1?"Users/view":""}</p>
-       <p>{activeTab==2?"Users/Resume":""}</p>
-       <p>{activeTab==3?"Users/Upcoming interviews":""}</p>
-       <p>{activeTab==4?"Users/Reports":""}</p>
+       <p>Users{activeTab===1?"/view":activeTab===2?"/Resume":activeTab===3?"/Upcoming interviews":"/Reports"}</p>
+       
+       
     </div>
     <div className='flex gap-6 my-6 text-grey text-base font-semibold '>
         <h1 className={`cursor-pointer ${activeTab===1 ? "text-orange border-b-[6px] pb-2 border-orange " :"text-grey"}`} onClick={()=>handleTab(1)}>User Dashboard</h1>

@@ -49,7 +49,7 @@ const AddUser = ({onClose}) => {
               <label className="col-span-5 text-[#48505E] text-base font-normal  ">
                Department
             </label>
-            <select defaultValue="Gender" className="col-span-7 border border-light-grey text-grey rounded-md w-60 h-11 px-2 ">
+            <select defaultValue="Depart" className="col-span-7 border border-light-grey text-grey rounded-md w-60 h-11 px-2 ">
                    <option value="Depart" disabled>Select Department</option>
                     <option value="Cs">Computer Science</option>
                     <option value="IT">Information Technology</option>
@@ -103,7 +103,7 @@ const AddUser = ({onClose}) => {
               <label className="col-span-5 text-[#48505E] text-base font-normal  ">
               Skills
             </label>
-            <Select options={skills} isMulti className="col-span-7 text-grey rounded-md  "/>
+            <Select options= {skills} isMulti className="col-span-7 text-grey rounded-md "/>
           
                 <label className="col-span-5 text-[#48505E] text-base font-normal  ">
               Stronger Areas
@@ -113,7 +113,7 @@ const AddUser = ({onClose}) => {
                 <label className="col-span-5 text-[#48505E] text-base font-normal   ">
               Need to improve
             </label>
-            <Select options={skills} isMulti   className="col-span-7 text-grey rounded-md overflow-y-auto  "/>
+            <Select options={skills} isMulti   className="col-span-7 text-grey rounded-md "/>
                 <label className="col-span-5 text-[#48505E] text-base font-normal  ">
              Emotional Status
             </label>
