@@ -28,15 +28,15 @@ const AddUser = ({onClose}) => {
               <label className="col-span-5 text-[#48505E] text-base font-normal  ">
                 Name
             </label>
-              <input type='text'placeholder='Enter user name' className="col-span-7 border border-grey text-grey rounded-md w-60 h-11 px-2 "/>
+              <input type='text'placeholder='Enter user name' className="col-span-7 border border-light-grey text-grey rounded-md w-60 h-11 px-2 "/>
               <label className="col-span-5 text-[#48505E] text-base font-normal  ">
                Credits
             </label>
-              <input type='text' placeholder='Add Credits' className="col-span-7 border  border-grey text-grey rounded-md w-60 h-11 px-2 "/>
+              <input type='text' placeholder='Add Credits' className="col-span-7 border border-light-grey text-grey rounded-md w-60 h-11 px-2 "/>
               <label className="col-span-5 text-[#48505E] text-base font-normal  ">
                Gender
             </label>
-            <select defaultValue="Gender" className="col-span-7 border border-grey text-grey rounded-md w-60 h-11 px-2 ">
+            <select defaultValue="Gender" className="col-span-7 border border-light-grey text-grey rounded-md w-60 h-11 px-2 ">
                    <option value="Gender" disabled>Select Gender</option>
                     <option value="male">Male</option>
                     <option value="female">Female</option>
@@ -45,11 +45,11 @@ const AddUser = ({onClose}) => {
                 <label className="col-span-5 text-[#48505E] text-base font-normal  ">
                Date Of Birth
             </label>
-              <input type='date'  className="col-span-7 border  border-grey text-grey rounded-md w-60 h-11 px-2 "/> 
+              <input type='date'  className="col-span-7 border border-light-grey text-grey rounded-md w-60 h-11 px-2 "/> 
               <label className="col-span-5 text-[#48505E] text-base font-normal  ">
                Department
             </label>
-            <select defaultValue="Gender" className="col-span-7 border  border-grey text-grey rounded-md w-60 h-11 px-2 ">
+            <select defaultValue="Gender" className="col-span-7 border border-light-grey text-grey rounded-md w-60 h-11 px-2 ">
                    <option value="Depart" disabled>Select Department</option>
                     <option value="Cs">Computer Science</option>
                     <option value="IT">Information Technology</option>
@@ -58,7 +58,7 @@ const AddUser = ({onClose}) => {
                 <label className="col-span-5 text-[#48505E] text-base font-normal  ">
               Age
             </label>
-              <input type='text' placeholder='Type age'  className="col-span-7 border  border-grey text-grey rounded-md w-60 h-11 px-2 "/> 
+              <input type='text' placeholder='Type age'  className="col-span-7 border border-light-grey text-grey rounded-md w-60 h-11 px-2 "/> 
              
              
             
@@ -68,7 +68,7 @@ const AddUser = ({onClose}) => {
               <input
                 type="email"
                 placeholder=" Enter your Email"
-                className="col-span-7 text-grey border  border-grey w-60 rounded-md  h-11 px-2 "
+                className="col-span-7 text-grey border border-light-grey w-60 rounded-md  h-11 px-2 "
               />
             
             <label className="col-span-5 text-[#48505E] text-base font-normal ">
@@ -77,7 +77,7 @@ const AddUser = ({onClose}) => {
               <input
                 type="text"
                 placeholder="Enter your mobile number"
-                className="col-span-7  text-grey border  border-grey rounded-md w-60 h-11  px-2 "
+                className="col-span-7  text-grey border border-light-grey rounded-md w-60 h-11  px-2 "
               />
            
           
@@ -87,19 +87,19 @@ const AddUser = ({onClose}) => {
            <label className="col-span-5 text-[#48505E] text-base font-normal  ">
                 Apartment
             </label>
-              <input type='text'placeholder='Enter your Apartment' className="col-span-7 border  border-grey text-grey rounded-md w-60 h-11 px-2 "/>
+              <input type='text'placeholder='Enter your Apartment' className="col-span-7 border border-light-grey text-grey rounded-md w-60 h-11 px-2 "/>
               <label className="col-span-5 text-[#48505E] text-base font-normal  ">
                City
             </label>
-              <input type='text' placeholder='Enter your City' className="col-span-7 border  border-grey text-grey rounded-md w-60 h-11 px-2 "/>
+              <input type='text' placeholder='Enter your City' className="col-span-7 border border-light-grey text-grey rounded-md w-60 h-11 px-2 "/>
               <label className="col-span-5 text-[#48505E] text-base font-normal  ">
                State
             </label>
-              <input type='text' placeholder='Enter your State' className="col-span-7 border  border-grey text-grey rounded-md w-60 h-11 px-2 "/>
+              <input type='text' placeholder='Enter your State' className="col-span-7 border  border-light-grey text-grey rounded-md w-60 h-11 px-2 "/>
               <label className="col-span-5 text-[#48505E] text-base font-normal  ">
                Pincode
             </label>
-              <input type='text' placeholder='Enter your Pincode' className="col-span-7 border  border-grey text-grey rounded-md w-60 h-11 px-2 "/>
+              <input type='text' placeholder='Enter your Pincode' className="col-span-7 border  border-light-grey text-grey rounded-md w-60 h-11 px-2 "/>
               <label className="col-span-5 text-[#48505E] text-base font-normal  ">
               Skills
             </label>
@@ -122,7 +122,7 @@ const AddUser = ({onClose}) => {
            </span></div>
            <span className='lg:grid md:grid grid lg:grid-cols-12 md:grid-cols-10  items-center mx-4 my-2'>
            <label className='col-span-2'>Description</label>
-           <textarea rows={5} placeholder='Type a messages' className='px-2 py-2 col-span-10 ml-8 border  border-grey rounded-md text-grey '/>
+           <textarea rows={5} placeholder='Type a messages' className='px-2 py-2 col-span-10 ml-8 border border-light-grey rounded-md text-grey '/>
            </span>
 
               <div className=" flex justify-center gap-2 py-2">

@@ -17,7 +17,7 @@ export default {
         'select-title':' #3B5998',
         'orange':'#FD7D00',
         'grey':'#7D7D7D',
-        'grey':'#D0D5DD'
+        'light-grey':'#D0D5DD'
       }
     },
   },
